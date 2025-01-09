@@ -1,0 +1,45 @@
+.app-header {
+  background-color: #ffffff;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav {
+  display: flex;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+  margin: 2rem;
+}
+
+a.active {
+  font-weight: bold;
+  color: #0056b3;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+div img {
+  width: 105px;
+  height: 75px;
+  object-fit: contain;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(219, 197, 197, 0.1); /* Horizontal, Vertical, Blur, Spread, Color */
+  border-radius: 8px; /* Optional: Rounded corners for a polished look */
+  transition: box-shadow 0.3s ease; /* Smooth transition for hover effect */
+  
+}
+
+div img:hover {
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
