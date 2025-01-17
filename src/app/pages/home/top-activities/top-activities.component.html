@@ -1,0 +1,19 @@
+<section class="top-activities-section">
+    <h2>Top 20 Activities of All Time!</h2>
+    <div class="activity-cards-container">
+      @for (activity of activities; track $index) {
+        <div class="activity-card">
+          <img
+            [src]="'./Images/' + getActivityImageName(activity.activityType)"
+            alt="{{ getActivityTypeName(activity.activityType) }} image"
+            class="activity-image"
+          />
+          <p><strong>Type:</strong> {{ getActivityTypeName(activity.activityType) }}</p>
+          <p><strong>Calories:</strong> {{ activity.caloriesBurned | number:'1.0-0' }} kcal</p>
+          <p><strong>Duration:</strong> {{ activity.duration }} min</p>
+          <p><strong>Date:</strong> {{ activity.date | date }}</p>
+        </div>
+      }
+    </div>
+  </section>
+  

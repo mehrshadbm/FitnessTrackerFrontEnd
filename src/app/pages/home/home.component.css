@@ -1,0 +1,15 @@
+:host {
+    display: flex;
+  }
+  
+  .home-content {
+    margin-left: 150px;
+    padding: 2rem;
+    flex: 1;
+    background-color: #f9f6fb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
